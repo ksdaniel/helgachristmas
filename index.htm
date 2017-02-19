@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="content centered">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+            </div>
+            <div class="col">
+                <div class="card" style="width: 30rem;" id="bookingzone">
+                    <div class="card-block">
+                        <h3 class="card-title">Christmas present booking</h3>
+                        <p class="card-text">I realize its not gifting prowess, but given scheduling difficulties, surprise will be sacrificed
+                            for flexibility.</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleSelect1">Select location</label>
+                                <select class="form-control" id="locationselect" title="It's Paris'" data-content="So this is kinda just for looks here. Ticket is for Paris. The Paris. Just Paris.">
+                                <option>Paris</option>
+                                </select>
+                            </div>
+                            <div class="input-group input-daterange" id="datezone">
+                                <input type="text" class="form-control" value="2017-02-24" data-date-container='#datezone'>
+                                <div class="input-group-addon">to</div>
+                                <input id="toinput" type="text" class="form-control" value="2017-02-25" data-date-container='#datezone' title="About the dates"
+                                    data-content="I did not have time to add date validation. Please make sure they are correct.">
+                            </div>
+                        </form>
+                        <a href="#" class="btn btn-primary">Book your present</a>
+                        <div style="display: block; margin-top:10px;">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target=".bd-example-modal-lg">FAQ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="display: none">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/takeoff.jpg" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-inverse card-primary mb-3 text-center">
+                            <div class="card-block">
+                                <blockquote class="card-blockquote">
+                                    <p>I am confused. What is this?</p>
+                                    <footer>This is an atempt at an original gift. (and a chance for me to nerd out)</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="card card-inverse card-success mb-3 text-center">
+                            <div class="card-block">
+                                <blockquote class="card-blockquote">
+                                    <p>Still confused. So what the hell do I get?</p>
+                                    <footer>Duuhh... its obiously a trip to <cite title="Paris">Paris</cite>.</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-inverse card-warning mb-3 text-center">
+                            <div class="card-block">
+                                <blockquote class="card-blockquote">
+                                    <p>But... I don't have time to go to Paris.</p>
+                                    <footer>Well... It's a <cite title="Source Title">Flexi</cite> ticket. Meaning you can go whenever
+                                        you want in the next 12 months (i think). Current date is 24 February, but it can
+                                        be changed for free.</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="card card-inverse card-danger mb-3 text-center">
+                            <div class="card-block">
+                                <blockquote class="card-blockquote">
+                                    <p>Uuuuu... cool... so what else?</p>
+                                    <footer>Hotel is included. Don't expect the Ritz.</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-inverse card-primary mb-3 text-center">
+                            <div class="card-block">
+                                <blockquote class="card-blockquote">
+                                    <p>OK. How does it work?</p>
+                                    <footer>Just fill in the dates, and click the OK button. You should receive a confirmation email
+                                        soon. (i think)</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="card card-inverse card-success mb-3 text-center">
+                            <div class="card-block">
+                                <blockquote class="card-blockquote">
+                                    <p>And nooowwww?</p>
+                                    <footer>Nothing left to do! Just don't forget the date, and take some VALID id when you go!</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+        </div>
+    </div>
+</body>
+
+</html>

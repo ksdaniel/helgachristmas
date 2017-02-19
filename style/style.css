@@ -1,0 +1,14 @@
+body {
+    background-image: url("/images/paris.jpg");
+    background-size: cover;
+}
+
+.centered{
+    width: 1024px;
+    margin:auto;
+    margin-top:200px;
+}
+
+.faq{
+    display: none;
+}
